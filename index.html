@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My AI Chat</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome for Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="app-container">
+      <!-- Sidebar Navigation -->
+      <aside class="sidebar">
+        <!-- Top Header in Sidebar -->
+        <div class="sidebar-header">
+          <div class="logo">
+            <i class="fa-solid fa-sparkles logo-icon"></i>
+            <span>My AI</span>
+          </div>
+        </div>
+
+        <!-- New Chat Button -->
+        <button class="new-chat-btn">
+          <i class="fa-solid fa-plus"></i> New Chat
+        </button>
+
+        <!-- Chat History Section -->
+        <div class="chat-history">
+          <div class="history-group">
+            <span class="group-title">Today</span>
+            <ul>
+              <li class="active">
+                <i class="fa-regular fa-message"></i> Explain HTML basics
+              </li>
+              <li><i class="fa-regular fa-message"></i> CSS project ideas</li>
+              <li>
+                <i class="fa-regular fa-message"></i> Operating System notes
+              </li>
+            </ul>
+          </div>
+
+          <div class="history-group">
+            <span class="group-title">Yesterday</span>
+            <ul>
+              <li>
+                <i class="fa-regular fa-message"></i> JavaScript questions
+              </li>
+              <li>
+                <i class="fa-regular fa-message"></i> Web development project
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Sidebar Footer / User Info -->
+        <div class="sidebar-footer">
+          <div class="footer-item">
+            <i class="fa-solid fa-gear"></i> Settings
+          </div>
+          <div class="footer-item">
+            <i class="fa-regular fa-circle-question"></i> Help
+          </div>
+
+          <div class="user-profile">
+            <div class="avatar">A</div>
+            <div class="user-info">
+              <span class="user-name">Student</span>
+              <span class="user-plan">Free Plan</span>
+            </div>
+            <i class="fa-solid fa-ellipsis ellipsis-btn"></i>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Main Content Area -->
+      <main class="main-content">
+        <!-- Top Navbar -->
+        <header class="top-nav">
+          <div class="model-selector">
+            <span>My AI</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="top-actions">
+            <i class="fa-solid fa-pencil action-icon"></i>
+            <i class="fa-solid fa-ellipsis action-icon"></i>
+          </div>
+        </header>
+
+        <!-- Scrollable Chat Body -->
+        <div class="chat-body">
+          <!-- AI Icon Header Banner -->
+          <div class="center-header">
+            <div class="sparkle-circle">
+              <i class="fa-solid fa-sparkles"></i>
+            </div>
+            <h1>How can I help you?</h1>
+            <p class="subtitle">
+              Ask me anything. I can help you learn, write, code and explore
+              ideas.
+            </p>
+          </div>
+
+          <!-- Chat Messages List -->
+          <div class="messages-container">
+            <!-- User Message -->
+            <div class="message user-message">
+              <div class="msg-avatar user-avatar">A</div>
+              <div class="msg-content">
+                <div class="sender-title">You</div>
+                <p>Explain HTML in simple words.</p>
+              </div>
+            </div>
+
+            <!-- AI Response Message -->
+            <div class="message ai-message">
+              <div class="msg-avatar ai-avatar">
+                <i class="fa-solid fa-sparkles"></i>
+              </div>
+              <div class="msg-content">
+                <div class="sender-title">My AI</div>
+                <p>
+                  HTML stands for HyperText Markup Language. It is used to
+                  create the structure of a web page.
+                </p>
+                <p>
+                  For example, we use headings, paragraphs, images, links and
+                  buttons to build a webpage.
+                </p>
+
+                <!-- Code Snippet Box -->
+                <div class="code-box">
+                  <div class="code-header">
+                    <span>HTML</span>
+                    <button class="copy-btn">
+                      <i class="fa-regular fa-copy"></i> Copy
+                    </button>
+                  </div>
+                  <pre><code>&lt;h1&gt;Hello World&lt;/h1&gt;</code></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Input Bar Section -->
+        <div class="input-container">
+          <div class="input-box">
+            <button class="icon-btn plus-btn">
+              <i class="fa-solid fa-plus"></i>
+            </button>
+            <input type="text" placeholder="Message My AI..." />
+            <button class="icon-btn mic-btn">
+              <i class="fa-solid fa-microphone"></i>
+            </button>
+            <button class="send-btn">
+              <i class="fa-solid fa-arrow-up"></i>
+            </button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
